@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>FastSport.co is down</title>
+<script>
+        function monthGet() {
+          var m_names = ['January', 'February', 'March', 
+                       'April', 'May', 'June', 'July', 
+                       'August', 'September', 'October', 'November', 'December'];
+          d = new Date();
+          var month = d.getMonth()+1;
+          var n = m_names[month]; 
+          document.getElementById("month").innerHTML = n;
+          
+        }
+        </script>
+
+<body onload="monthGet()">
+    <div id="logo">
+        F
+    </div>
+    <div id="content">
+        <div id="summary">
+            FastSport is currently down due to maximum bandwidth usage for the month. We will be back in <div id="month"></div>
+        </div>
+    </div>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+    body {
+    background: #3c3c3c;
+    color: #FFF;
+}
+
+div#logo {font-family: "Yesteryear", sans-serif;font-size: 4em;}
+
+div#content {
+    margin-top: 2em;
+    width: 90%;
+    font-family: "Oswald", sans-serif;
+    margin: 0 auto;
+    background: #FFF;
+    height: 37%;
+    color: #000;
+}
+
+
+div#month {
+    display: inline;
+}
+
+
+
+div#text {
+    width: 100%;
+    text-align: center;
+    display: block;
+    height: 100%;
+    font-size: 2em;
+    color: #FF0000;
+}
+
+
+div#error {
+    background: black;
+    color: #bfbf00;
+    text-align: center;
+    width: 99%;
+    margin: 0 auto;
+    font-size: 3em;
+}
+</style>
+</body>
+</head>
+</html>
